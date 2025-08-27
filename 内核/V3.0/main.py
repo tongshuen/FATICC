@@ -335,8 +335,12 @@ def interactive_shell():
             print("\n(FAITCC)→ 使用 exit 或 quit 退出程序")
         except Exception as e:
             print(f"(FAITCC)→ 错误: {str(e)}")
-
 if __name__ == "__main__":
+    print(f"""
+欢迎使用 FAITCC(four QAM anti-interference text communication codec)！
+内核版本：{kernel_version} 协议版本：{protocol_version} ©2025 童顺
+你可以用任何方式使用，分发，研究，改进，回馈本软件，但是必须保留版权声明 
+    """)
     if len(sys.argv) == 1:
         interactive_shell()
     else:
